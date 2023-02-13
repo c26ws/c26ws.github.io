@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#text{
+			font-size: 75px
+		}
+
+		p{
+			font-size: 50px
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<!-- <p>Text</p> -->
+		<div id="text"></div>
+
+	</center>
+
+		<script type="text/javascript">
+			
+
+			var breakfast = ["yellow", "green", "purple", "blue", "black", "orange", "brown"];
+
+			document.addEventListener("click", function(){
+				var number = Math.round(Math.random()*6)
+				console.log(number)
+				text.innerText = breakfast[number];
+
+				function scrollText (){
+					var number = Math.round(Math.random()*6)
+
+					text.innerText = breakfast[number];
+				}
+
+				setInterval(scrollText, 100)
+			})
+		</script>
+</body>
+</html>

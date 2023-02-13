@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#text{
+			font-size: 75px
+		}
+
+		p{
+			font-size: 50px
+		}
+
+		#square{
+			width: 400px
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<!-- <p>Text</p> -->
+		<div id="text"></div>
+		<div id="square"></div>
+
+	</center>
+
+		<script type="text/javascript">
+			
+
+			var color = ["greenC", "blueC", "redC",   "blackC", "yellowC", "purpleC", "orangeC"];
+
+			document.addEventListener("click", function(){
+				var number = Math.round(Math.random()*6)
+				console.log(number)
+				text.innerText = color[number];
+
+			var square = ["green", "blue", "red", "black", "yellow", "purple", "orange"]
+
+			document.addEventListener("click", function(){
+				var numb = Math.round(Math.random()*6)
+				console.log(numb)
+				square.style.backgroundColor = square[numb];
+				
+
+				// function scrollText (){
+				// 	var number = Math.round(Math.random()*6)
+
+				// 	text.innerText = breakfast[number];
+				// }
+
+				// setInterval(scrollText, 500)
+			})
+		</script>
+</body>
+</html>

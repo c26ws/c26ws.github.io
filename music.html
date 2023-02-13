@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	
+
+
+
+		
+
+
+
+
+
+
+
+
+	
+	</style>
+</head>
+<body>
+
+	
+	<div id = "links">
+		<a href="journal.html"><div id = "realinks"> journal entry</div>
+	</div>
+
+	<!-- 1. add an event listener to the document
+Switch Strategy:
+2. create a variable that acts like a switch that stores the value of any binary (e.g. "playing" or "paused" ||true or false)and
+3. then based on tht play or pause the audio
+
+Odd/Even strategy
+2. Create counter variable that counts the number of clicks
+3. If the the counter is odd, play the audio
+4. If the counter is even, pause the audio -->
+	<audio src="classical.mp3" id="song"></audio>
+
+<script type="text/javascript">
+	var clicks = 0;
+	document.addEventListener("click",
+		function(){
+			clicks=clicks+1
+			console.log(clicks)
+			
+			if(clicks%2 == 1){
+				document.body.style.
+				 backgroundColor = "black";
+				song.play()
+			}
+			if(clicks%2 == 0){
+				 document.body.style.backgroundColor ="red"
+				song.pause()
+			}
+			
+		})
+
+
+
+</script>
+
+
+
+</body>
+</html>

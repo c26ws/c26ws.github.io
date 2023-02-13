@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#text{
+			font-size: 75px
+		}
+
+		p{
+			font-size: 50px
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<p>See all my favorite breakfast foods in under a second</p>
+		<div id="text"></div>
+
+	</center>
+
+		<script type="text/javascript">
+			
+
+			var breakfast = ["waffles", "eggs", "pancakes", "burrito", "bacon", "yogurt", "french toast", "omelette", "bagel"];
+
+			document.addEventListener("click", function(){
+				var number = Math.round(Math.random()*8)
+				console.log(number)
+				text.innerText = breakfast[number];
+
+				function scrollText (){
+					var number = Math.round(Math.random()*8)
+
+					text.innerText =
+					breakfast[number];
+				}
+
+				setInterval(scrollText, 10)
+			})
+		</script>
+</body>
+</html>
