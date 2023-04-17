@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<style>
+
+
+#buggy{
+width:100px;
+height:100px;
+background-color:blue;
+left:10px;
+position:absolute;
+}
+</style>
+</head>
+<body>
+
+<div id="buggy"></div>
+
+<script type="text/javascript">
+buggy.style.left = "0px";
+// starts the car at (0,0)
+
+var x = 0
+var y = 0
+// creates a variable that tracks position of y and x
+document.addEventListener("keydown", function(event){
+// when you press a key it runs the function
+if(event.keyCode == 39){
+
+
+// logs a certain key(arrow to the right) 
+x = x+10;
+// adds 10px each time you press said arrow
+buggy.style.left = x +"px";
+}
+// makes it so you move ten px instead of not working
+
+else if(event.keyCode == 37){
+x = x-10
+buggy.style.left = x +"px";
+}
+
+else if(event.keyCode == 40){
+y = y+10
+buggy.style.top = y +"px";
+
+}
+
+else if(event.keyCode == 38){
+y = y-10
+buggy.style.top = y +"px";
+}
+
+
+})
+
+
+
+
+
+</script>
+
+</body>
+</html>
